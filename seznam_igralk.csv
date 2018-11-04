@@ -1,0 +1,101 @@
+rank,id,ime,drzava,datum_rojstva,starost,roka,tocke,odigrani_turnirji,zacetek,letni_zasluzek,karierni_zasluzek,letno_razmerje,karierno_razmerje
+1,314320,Simona Halep,Romania,27 Sep 1991,27,Right Handed,6921,17,2006,"$6,359,564","$27,095,579",46/11,450/197
+2,311470,Angelique Kerber,Germany,18 Jan 1988,30,Left Handed,5875,19,2003,"$5,686,362","$27,156,841",46/19,595/311
+3,313402,Caroline Wozniacki,Denmark,11 Jul 1990,28,Right Handed,5586,19,2005,"$6,007,719","$32,842,413",41/17,610/247
+4,316738,Elina Svitolina,Ukraine,12 Sep 1994,24,Right Handed,5350,19,2010,"$5,237,247","$12,608,625",44/15,329/169
+5,319998,Naomi Osaka,Japan,16 Oct 1997,21,Right Handed,5115,20,-,"$6,394,289","$7,629,197",42/20,177/119
+6,315683,Sloane Stephens,United States,20 Mar 1993,25,Right Handed,5023,20,-,"$5,068,099","$13,376,203",37/19,269/177
+7,314206,Petra Kvitova,Czech Republic,08 Mar 1990,28,Left Handed,4630,21,2006,"$3,301,389","$27,342,207",47/17,490/217
+8,313974,Karolina Pliskova,Czech Republic,21 Mar 1992,26,Right Handed,4465,23,2009,"$3,089,050","$13,924,441",49/23,475/272
+9,314584,Kiki Bertens,The Netherlands,10 Dec 1991,26,Right Handed,4335,25,2009,"$3,163,688","$6,522,124",46/23,371/225
+10,322082,Daria Kasatkina,Russia,07 May 1997,21,Right Handed,3315,24,2014,"$2,634,441","$4,930,094",41/23,195/92
+11,313987,Anastasija Sevastova,Latvia,13 Apr 1990,28,Right Handed,3185,22,2006,"$2,572,414","$5,863,943",42/20,386/209
+12,320760,Aryna Sabalenka,Belarus,05 May 1998,20,Right Handed,3145,26,-,"$1,742,872","$2,023,939",50/24,158/87
+13,317964,Elise Mertens,Belgium,17 Nov 1995,22,Right Handed,3065,22,2013,"$2,239,006","$3,035,246",45/20,253/131
+14,313381,Julia Goerges,Germany,02 Nov 1988,29,Right Handed,2995,23,2005,"$1,778,694","$8,413,769",45/22,444/308
+15,230234,Serena Williams,United States,26 Sep 1981,37,Right Handed,2976,9,1995,"$3,770,170","$88,233,301",18/6,801/136
+16,316959,Madison Keys,United States,17 Feb 1995,23,Right Handed,2817,16,2009,"$2,354,853","$9,888,678",28/13,249/136
+17,316239,GarbiĂ±e Muguruza,Spain,08 Oct 1993,25,Right Handed,2725,22,2011,"$1,860,762","$17,377,384",31/19,348/176
+18,315391,Caroline Garcia,France,16 Oct 1993,25,Right Handed,2600,22,-,"$1,769,824","$9,151,045",38/21,300/228
+19,318033,Ashleigh Barty,Australia,24 Apr 1996,22,Right Handed,2420,20,-,"$2,123,371","$4,508,080",43/18,181/77
+20,318425,Anett Kontaveit,Estonia,24 Dec 1995,22,Right Handed,2375,23,-,"$1,468,329","$2,733,289",32/23,262/135
+21,319939,Jelena Ostapenko,Latvia,08 Jun 1997,21,Right Handed,2363,21,2012,"$2,252,164","$7,184,484",23/21,206/114
+22,314429,Qiang Wang,China,14 Jan 1992,26,Right Handed,2155,23,-,"$1,321,204","$2,758,692",39/21,364/227
+23,311338,Carla SuĂˇrez Navarro,Spain,03 Sep 1988,30,Right Handed,2153,21,2003,"$1,645,782","$10,763,923",29/22,491/318
+24,312268,Mihaela Buzarnescu,Romania,04 May 1988,30,Left Handed,1860,28,2004,"$1,077,268","$1,454,085",39/23,404/211
+25,312894,Dominika Cibulkova,Slovak Republic,06 May 1989,29,Right Handed,1805,20,2004,"$1,175,376","$13,459,963",28/19,446/290
+26,314610,Camila Giorgi,Italy,30 Dec 1991,26,Right Handed,1800,21,-,"$922,593","$3,347,675",38/20,334/233
+27,315295,Lesia Tsurenko,Ukraine,30 May 1989,29,Right Handed,1755,20,2007,"$1,227,590","$3,843,001",29/18,378/253
+28,310053,Su-Wei Hsieh,Chinese Taipei,04 Jan 1986,32,Right Handed,1720,27,2001,"$1,257,928","$6,010,536",40/23,471/289
+29,310137,Maria Sharapova,Russia,19 Apr 1987,31,Right Handed,1602,13,2001,"$1,312,643","$38,342,119",20/11,637/162
+30,317790,Aliaksandra Sasnovich,Belarus,22 Mar 1994,24,Right Handed,1570,21,-,"$1,007,650","$2,044,820",34/23,262/161
+31,320301,Katerina Siniakova,Czech Republic,10 May 1996,22,Right Handed,1492,24,-,"$2,063,611","$4,299,792",32/24,216/136
+32,313711,Petra Martic,Croatia,19 Jan 1991,27,Right Handed,1465,20,2008,"$846,742","$2,934,505",33/19,305/216
+33,190879,Barbora Strycova,Czech Republic,28 Mar 1986,32,Right Handed,1460,23,2003,"$1,958,205","$9,072,054",25/23,538/379
+34,318516,Donna Vekic,Croatia,28 Jun 1996,22,Right Handed,1455,25,2012,"$830,793","$2,512,566",34/25,225/167
+35,316925,Danielle Collins,United States,13 Dec 1993,24,Right Handed,1395,25,-,"$819,625","$984,351",33/21,112/68
+36,311779,Shuai Zhang,China,21 Jan 1989,29,Right Handed,1370,27,2006,"$937,583","$4,540,898",28/25,442/295
+37,315997,Daria Gavrilova,Australia,05 Mar 1994,24,Right Handed,1335,23,-,"$894,078","$3,562,551",27/25,249/184
+38,313907,Johanna Konta,Great Britain,17 May 1991,27,Right Handed,1300,24,-,"$818,096","$6,955,419",26/23,340/210
+39,319001,Belinda Bencic,Switzerland,10 Mar 1997,21,Right Handed,1295,20,-,"$591,773","$3,714,541",18/19,207/120
+40,230220,Venus Williams,United States,17 Jun 1980,38,Right Handed,1206,12,1994,"$1,030,559","$40,931,048",17/11,792/233
+41,318312,Maria Sakkari,Greece,25 Jul 1995,23,Right Handed,1164,26,2015,"$756,233","$1,695,861",24/26,276/187
+42,313796,Anastasia Pavlyuchenkova,Russia,03 Jul 1991,27,Right Handed,1160,22,2005,"$790,572","$8,769,080",21/21,396/263
+43,315232,Ajla Tomljanovic,Australia,07 May 1993,25,Right Handed,1157,27,2009,"$495,406","$2,116,995",36/24,269/188
+44,315616,Kristina Mladenovic,France,14 May 1993,25,Right Handed,1155,27,-,"$1,816,210","$8,773,895",22/28,292/255
+45,317683,Yulia Putintseva,Kazakhstan,07 Jan 1995,23,Right Handed,1145,24,-,"$832,974","$3,027,366",23/24,248/195
+46,312121,AlizĂ© Cornet,France,22 Jan 1990,28,Right Handed,1130,27,2006,"$680,149","$6,565,628",27/25,411/331
+47,316286,Saisai Zheng,China,05 Feb 1994,24,Right Handed,1128,23,-,"$350,560","$2,349,970",43/18,278/185
+48,320942,Sofia Kenin,United States,14 Nov 1998,19,Right Handed,1073,28,-,"$545,876","$881,475",37/24,141/86
+49,310331,Kirsten Flipkens,Belgium,10 Jan 1986,32,Right Handed,1058,25,2003,"$643,250","$4,456,964",31/24,483/347
+50,312580,Magdalena Rybarikova,Slovak Republic,04 Oct 1988,30,Right Handed,1056,22,2005,"$772,172","$4,937,474",17/22,416/293
+51,317819,Alison Van Uytvanck,Belgium,26 Mar 1994,24,Right Handed,1055,25,-,"$658,894","$2,105,904",25/24,273/181
+52,312001,Victoria Azarenka,Belarus,31 Jul 1989,29,Right Handed,1051,12,2003,"$847,800","$29,278,989",17/12,484/180
+53,317755,Monica Puig,Puerto Rico,27 Sep 1993,25,Right Handed,1010,19,2010,"$537,933","$2,820,539",27/19,282/186
+54,160515,Pauline Parmentier,France,31 Jan 1986,32,Right Handed,1009,28,2000,"$483,141","$3,193,410",23/30,452/403
+55,317771,Rebecca Peterson,Sweden,06 Aug 1995,23,Right Handed,1005,20,-,"$444,681","$758,427",33/16,219/116
+56,322277,Viktoria Kuzmova,Slovak Republic,11 May 1998,20,Right Handed,987,29,2014,"$398,582","$554,618",49/27,215/92
+57,316344,Aleksandra Krunic,Serbia,15 Mar 1993,25,Right Handed,985,23,2008,"$670,620","$2,094,470",22/23,292/202
+58,110536,Kaia Kanepi,Estonia,10 Jun 1985,33,Right Handed,984,18,2000,"$624,248","$5,569,390",30/14,474/277
+59,311604,Ekaterina Makarova,Russia,07 Jun 1988,30,Left Handed,972,21,2004,"$1,562,855","$13,084,282",16/21,436/304
+60,324261,Dayana Yastremska,Ukraine,15 May 2000,18,N/A,967,21,-,"$344,727","$403,497",43/19,96/50
+61,317070,Timea Babos,Hungary,10 May 1993,25,Right Handed,945,26,2011,"$1,578,697","$5,701,812",19/24,292/215
+62,316847,Ons Jabeur,Tunisia,28 Aug 1994,24,Right Handed,943,26,2010,"$401,569","$1,061,340",35/25,255/146
+63,312850,Alison Riske,United States,03 Jul 1990,28,Right Handed,922,25,-,"$434,603","$3,091,350",28/24,331/262
+64,310770,Andrea Petkovic,Germany,09 Sep 1987,31,Right Handed,899,23,2006,"$521,606","$7,122,578",28/24,456/300
+65,322730,Vera Lapko,Belarus,29 Sep 1998,20,Right Handed,896,26,-,"$337,792","$450,297",39/24,143/68
+66,313169,Irina-Camelia Begu,Romania,26 Aug 1990,28,Right Handed,872,25,-,"$823,497","$4,673,228",22/25,363/255
+67,323027,Marketa Vondrousova,Czech Republic,28 Jun 1999,19,Left Handed,835,20,-,"$634,374","$964,355",21/20,128/47
+68,317708,Bernarda Pera,United States,03 Dec 1994,23,N/A,834,25,-,"$581,813","$739,874",27/25,248/129
+69,323079,Tamara Zidansek,Slovenia,26 Dec 1997,20,Right Handed,814,28,-,"$215,778","$311,586",52/18,186/58
+70,318609,Taylor Townsend,United States,16 Apr 1996,22,Left Handed,807,20,2012,"$418,834","$1,408,759",29/15,179/110
+71,315427,Ana Bogdan,Romania,25 Nov 1992,25,Right Handed,803,24,-,"$461,060","$992,397",23/21,281/169
+72,190787,Samantha Stosur,Australia,30 Mar 1984,34,Right Handed,800,26,1999,"$701,050","$17,783,962",22/28,584/415
+73,315294,Dalila Jakupovic,Slovenia,24 Mar 1991,27,Right Handed,790,30,-,"$331,632","$557,298",38/26,309/273
+74,312251,Agnieszka Radwanska,Poland,06 Mar 1989,29,Right Handed,778,17,2005,"$484,522","$27,683,807",14/14,594/269
+75,311593,Johanna Larsson,Sweden,17 Aug 1988,30,Right Handed,778,27,2006,"$503,958","$3,497,504",25/26,430/311
+76,318203,Anna Karolina Schmiedlova,Slovak Republic,13 Sep 1994,24,Right Handed,765,30,2011,"$321,437","$1,977,165",31/28,268/181
+77,310775,Monica Niculescu,Romania,25 Sep 1987,31,Right Handed,762,23,2002,"$496,099","$5,568,010",26/21,486/335
+78,310440,Tatjana Maria,Germany,08 Aug 1987,31,Right Handed,758,27,-,"$531,777","$2,575,477",20/27,499/377
+79,315365,Mona Barthel,Germany,11 Jul 1990,28,Right Handed,756,28,2008,"$390,230","$3,331,510",30/29,355/252
+80,313968,Polona Hercog,Slovenia,20 Jan 1991,27,Right Handed,745,23,2006,"$367,524","$2,845,834",22/22,375/247
+81,315130,Magda Linette,Poland,12 Feb 1992,26,Right Handed,733,28,2009,"$441,584","$1,720,394",23/28,313/236
+82,315296,Lara Arruabarrena,Spain,20 Mar 1992,26,Right Handed,731,26,-,"$668,261","$2,775,874",18/29,320/237
+83,317510,Yafan Wang,China,30 Apr 1994,24,Right Handed,728,25,-,"$453,450","$1,115,661",30/23,201/136
+84,312336,Stefanie Voegele,Switzerland,10 Mar 1990,28,Right Handed,727,29,2006,"$286,882","$2,142,788",30/26,393/322
+85,312469,Sorana Cirstea,Romania,07 Apr 1990,28,Right Handed,712,23,2006,"$613,499","$4,906,015",16/24,416/308
+86,318872,Sara Sorribes Tormo,Spain,08 Oct 1996,22,Right Handed,700,28,-,"$354,856","$915,306",38/26,238/153
+87,312584,Evgeniya Rodina,Russia,04 Feb 1989,29,Right Handed,699,35,2004,"$392,771","$2,042,497",28/32,430/317
+88,316161,Eugenie Bouchard,Canada,25 Feb 1994,24,Right Handed,692,19,-,"$371,554","$6,088,075",27/19,252/176
+89,312328,Madison Brengle,United States,03 Apr 1990,28,Right Handed,676,24,-,"$347,120","$2,421,305",37/20,441/328
+90,315696,Zarina Diyas,Kazakhstan,18 Oct 1993,25,Right Handed,675,23,-,"$486,278","$2,348,865",28/23,270/184
+91,316296,Viktorija Golubic,Switzerland,16 Oct 1992,26,Right Handed,675,25,-,"$289,548","$1,092,087",33/24,284/188
+92,319007,Ekaterina Alexandrova,Russia,15 Nov 1994,23,Right Handed,672,25,-,"$318,719","$827,010",24/24,232/137
+93,326384,Amanda Anisimova,United States,31 Aug 2001,17,Right Handed,661,13,-,"$247,910","$360,741",24/9,51/23
+94,325601,Anastasia Potapova,Russia,30 Mar 2001,17,Right Handed,656,15,-,"$194,090","$266,890",32/15,66/34
+95,319125,Katie Boulter,Great Britain,01 Aug 1996,22,N/A,654,28,-,"$231,029","$382,205",36/24,165/109
+96,317443,Sachia Vickery,United States,11 May 1995,23,Right Handed,651,26,-,"$335,724","$964,788",27/23,230/182
+97,313975,Kristyna Pliskova,Czech Republic,21 Mar 1992,26,Left Handed,643,26,2009,"$456,159","$2,158,097",26/27,356/290
+98,324267,Anna Blinkova,Russia,10 Sep 1998,20,Right Handed,639,28,2015,"$334,191","$585,137",40/26,119/70
+99,316981,Heather Watson,Great Britain,19 May 1992,26,Right Handed,628,24,2010,"$480,305","$3,215,514",22/25,272/215
+100,319969,Fiona Ferro,France,12 Mar 1997,21,Right Handed,617,26,2012,"$174,415","$385,771",42/21,166/135
