@@ -5,6 +5,7 @@ import json
 import sys
 import os
 import time
+from pprint import pprint
 
 def pripravi_imenik(ime_datoteke):
     '''Če še ne obstaja, pripravi prazen imenik za dano datoteko.'''
@@ -52,20 +53,18 @@ def zapisi_json(objekt, ime_datoteke):
 
 ##############################################################################
 
-with open('rankings.html') as datoteka:
-    vsebina = datoteka.read()
+vsebina = json.loads(open('rankings_real.json').read())
+vsebina = str(vsebina)
+vsebina = vsebina
+#print(vsebina)
 
 vzorec = re.compile(
-    r'''<tr><td class="rank footable-first-visible" headers="luxbox-ranking-col-rank" style="display: table-cell;">(?P<rank>\d+)</td>'''
-    r'''<td class="move" headers="luxbox-ranking-col-move" style="display: table-cell;"><span><span class="move.*?">\S*</span>\d*</span></td>'''
-    r'<td class="country" headers="luxbox-ranking-col-country" style="display: table-cell;">'
-    r'<span data-tooltip=".*?" class="flag flag-icon flag-icon-.*?">'
-    r'''<a href="http://www.wtatennis.com/rankings#" data-tooltip="(?P<drzava>.*?)">.*?'''
-    r'''<td class="player" headers="luxbox-ranking-col-fullname" style="display: table-cell;"><div class="player-hidden">(?P<ime>.*?)</div>'''
-    r'''<a href="http://www.wtatennis.com/player-profile/(?P<id>\d+)">.*?</a></td>'''
-    r'''<td class="age" headers="luxbox-ranking-col-age" style="display: table-cell;">(?P<starost>\d+)</td>'''
-    r'''<td class="points" headers="luxbox-ranking-col-points" style="display: table-cell;">(?P<tocke>\d+)</td>'''
-    r'''<td class="played footable-last-visible" headers="luxbox-ranking-col-tourn" style="display: table-cell;">(?P<odigrani_turnirji>\d+)</td></tr>'''
+    r'''{'rank': (?P<rank>\d+), 'move'.*?</span>', 'country':'''
+    r''' '<span data-tooltip="(?P<drzava>.*?)'''
+    r'''\" class=\"flag flag-icon flag-icon-.*?'''
+    r'''href=\"#\" data-tooltip=.*?'''
+    r'''href=\".player-profile.(?P<id>\d+).>(?P<ime>.*?)'''
+    r'''<.a>', 'age': (?P<starost>\d+), 'points': (?P<tocke>\d+), 'tourn': (?P<odigrani_turnirji>\d+)}'''
     , re.DOTALL)
 
 vzorec_za_igralko = re.compile(r'<div class="field__items"><div class="field__item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content=".*?T00:00:00\+00:00">'
@@ -80,9 +79,11 @@ vzorec_za_igralko = re.compile(r'<div class="field__items"><div class="field__it
                      r'</tr><tr class="even"><td class="first">W/L - Singles</td><td class="ytd">(?P<letno_razmerje>.*?)</td>'
                      r'<td class="career last">(?P<karierno_razmerje>.*?)</td></tr></tbody></table></div></div></div></div></div>', re.DOTALL) 
 
+
+
 def izloci_podatke(podatki_igralke):
     podatki_igralke = ujemanje.groupdict()
-    podatki_igralke['ime'] = podatki_igralke['ime'].strip()
+    podatki_igralke['ime'] = ' '.join(podatki_igralke['ime'].strip().split()[::-1])
     podatki_igralke['starost'] = int(podatki_igralke['starost'])
     podatki_igralke['id'] = int(podatki_igralke['id'])
     podatki_igralke['odigrani_turnirji'] = int(podatki_igralke['odigrani_turnirji'])
@@ -92,7 +93,9 @@ def izloci_podatke(podatki_igralke):
 
 def izloci_podatke2(podatki):
     podatki = ujemanje.groupdict()
-    podatki['roka'] = podatki['roka'].replace('-', ' ')
+    podatki['roka'] = podatki['roka'].replace('-', ' ').replace('Right Handed', 'desna').replace('Left Handed', 'leva')
+    podatki['letni_zasluzek'] = podatki['letni_zasluzek'].replace('$', '').replace(',', '').replace('.', '')
+    podatki['karierni_zasluzek'] = podatki['karierni_zasluzek'].replace('$', '').replace(',', '').replace('.', '')
     return podatki
 
 podatki_igralk = []
@@ -102,10 +105,11 @@ for ujemanje in vzorec.finditer(vsebina):
 
 igralka = []
 for slovar in podatki_igralk:
-    #url = ('http://www.wtatennis.com/player-profile/{}'.format(slovar['id']))
-    #shrani_spletno_stran(url, 'zajeti-podatki/igralka-{}.html'.format(slovar['ime']))
-    #time.sleep(1)
-    vsebina = vsebina_datoteke('zajeti-podatki/igralka-{}.html'.format(slovar['ime']))
+    url = ('http://www.wtatennis.com/player-profile/{}'.format(slovar['id']))
+    shrani_spletno_stran(url, 'zajeti-podatki/{}.html'.format(slovar['ime']))
+    time.sleep(1)
+    imena = ' '.join(slovar['ime'].strip().split()[::-1])
+    vsebina = vsebina_datoteke('zajeti-podatki/{}.html'.format(imena))
     for ujemanje in vzorec_za_igralko.finditer(vsebina):
         podatki_za_igralko = izloci_podatke2(ujemanje.groupdict())
         igralka.append(podatki_za_igralko)
@@ -116,14 +120,15 @@ for i in range(len(igralka)):
     c = {**a[i], **b[i]}
     nov_seznam.append(c)
 
+
 seznam_stvari = ['rank', 'id', 'ime', 'drzava', 'datum_rojstva', 'starost', 'roka', 'tocke', 'odigrani_turnirji', 'zacetek', 'letni_zasluzek', 'karierni_zasluzek', 'letno_razmerje', 'karierno_razmerje']
 with open('seznam_igralk.csv', 'w', encoding="utf8") as csv_dat:
     writer = csv.DictWriter(csv_dat, seznam_stvari)
     writer.writeheader()
-    with open('seznam_igralk.json', 'w') as json_datoteka:
-        for igralka in nov_seznam:
-            writer.writerow(igralka)
-            json.dump(igralka, json_datoteka, indent=4, ensure_ascii=False)
+    #with open('seznam_igralk.json', 'w') as json_datoteka:
+    for igralka in nov_seznam:
+        writer.writerow(igralka)
+            #json.dump(igralka, json_datoteka, indent=4, ensure_ascii=False)
 
 
                                
