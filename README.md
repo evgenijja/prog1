@@ -1,7 +1,8 @@
 # Analiza ženske teniške lestvice
 
 Pri projektu bom analizirala svetovno žensko WTA lestvico, ki jo najdemo **[na tej povezavi](http://www.wtatennis.com/rankings)**.
-Podatke za vse igralke sem pridobila **[na tej povezavi](https://www.wtatennis.com/node/239600/singles/ranking.json)**
+Podatke za vse igralke sem pridobila **[s te strani](https://www.wtatennis.com/node/239600/singles/ranking.json)**.
+Pridobljeni podatki se nahajajo v datoteki seznam_igralk.csv, datoteka s katero sem jih pridobila pa je pridobitev_podatkov.py.
 
 ## Podatki, ki sem jih zajela:
 - rank, ime in priimek, identifikacijska številka in država
