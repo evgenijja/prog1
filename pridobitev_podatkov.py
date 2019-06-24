@@ -108,7 +108,8 @@ for slovar in podatki_igralk:
     url = ('http://www.wtatennis.com/player-profile/{}'.format(slovar['id']))
     shrani_spletno_stran(url, 'zajeti-podatki/{}.html'.format(slovar['ime']))
     time.sleep(1)
-    imena = ' '.join(slovar['ime'].strip().split()[::-1])
+    imena = ' '.join(slovar['ime'].strip().split())#[::-1]
+    print(imena)
     vsebina = vsebina_datoteke('zajeti-podatki/{}.html'.format(imena))
     for ujemanje in vzorec_za_igralko.finditer(vsebina):
         podatki_za_igralko = izloci_podatke2(ujemanje.groupdict())
@@ -125,7 +126,7 @@ seznam_stvari = ['rank', 'id', 'ime', 'drzava', 'datum_rojstva', 'starost', 'rok
 with open('seznam_igralk.csv', 'w', encoding="utf8") as csv_dat:
     writer = csv.DictWriter(csv_dat, seznam_stvari)
     writer.writeheader()
-    #with open('seznam_igralk.json', 'w') as json_datoteka:
+   # with open('seznam_igralk.json', 'w') as json_datoteka:
     for igralka in nov_seznam:
         writer.writerow(igralka)
             #json.dump(igralka, json_datoteka, indent=4, ensure_ascii=False)
